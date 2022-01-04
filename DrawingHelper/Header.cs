@@ -6,7 +6,7 @@ namespace DrawingHelper
     public class Header
     {
 
-        public Section[] sections;
+        public Section[] Sections;
         int lines;
 
         /// <summary>
@@ -17,13 +17,13 @@ namespace DrawingHelper
         {
             lines = Lines;
             Section mainSection = new Section(0,0,Console.WindowWidth,Lines);
-            sections = new Section[] {mainSection};
+            this.Sections = new Section[] {mainSection};
         }
 
         public Header(int Lines, Section[] Sections)
         {
             lines = Lines;
-            sections = Sections;
+            this.Sections = Sections;
         }
 
     }

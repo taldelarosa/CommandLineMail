@@ -12,9 +12,11 @@ namespace UI
             // Console.ReadKey(false);
             // Console.SetCursorPosition(0,0);
 
-            Canvas window = new Canvas(Console.WindowWidth,Console.WindowHeight);
+            Console.Clear();
 
-            window.header.sections[0].Update("Hello World!");
+            Canvas Window = new Canvas(Console.WindowWidth,Console.WindowHeight);
+
+            Window.Header.Sections[0].Update("Header Info");
             Console.ReadKey();
         }
     }

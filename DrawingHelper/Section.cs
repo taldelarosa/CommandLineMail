@@ -5,26 +5,26 @@ namespace DrawingHelper
 {
     public class Section
     {
-        string text;
-        Bounds bounds;
+        string Text;
+        Bounds Bounds;
 
         public Section(int startingLocationX, int startingLocationY, int endingLocationX, int endingLocationY)
         {
-            bounds = new Bounds(startingLocationX,startingLocationY,endingLocationX,endingLocationY);
+            this.Bounds = new Bounds(startingLocationX,startingLocationY,endingLocationX,endingLocationY);
         }
 
         public void Update(string Text)
         {
-            text = Text;
+            this.Text = Text;
             this.Redraw();
         }
 
         private void Redraw()
         {
-            Console.SetCursorPosition(bounds.Item1,bounds.Item2);
+            Console.SetCursorPosition(this.Bounds.Item1,this.Bounds.Item2);
 
             //TODO: Dont write out if it would pass the bounds. Or only write out to the bounds
-            Console.Write(this.text);
+            Console.Write(this.Text);
         }
 
     }
