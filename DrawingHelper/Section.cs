@@ -23,6 +23,11 @@ namespace DrawingHelper
         {
             Console.SetCursorPosition(this.Bounds.Item1,this.Bounds.Item2);
 
+            if(this.Text.Length > this.Bounds.Item1)
+            {
+
+            }
+
             //TODO: Dont write out if it would pass the bounds. Or only write out to the bounds
             Console.Write(this.Text);
         }
