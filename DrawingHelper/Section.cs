@@ -5,15 +5,19 @@ namespace DrawingHelper
 {
     public class Section
     {
+        string Name;
         string Text;
-        Bounds Bounds;
+        internal Bounds Bounds;
+        internal SectionFormattingStyle Style;
 
-        public Section(int startingLocationX, int startingLocationY, int endingLocationX, int endingLocationY)
+        public Section(string Name, SectionFormattingStyle Style, int startingLocationX, int startingLocationY, int endingLocationX, int endingLocationY)
         {
+            this.Name = Name;
+            this.Style = Style;
             this.Bounds = new Bounds(startingLocationX,startingLocationY,endingLocationX,endingLocationY);
         }
 
-        public void Update(string Text)
+        internal void Update(string Text)
         {
             this.Text = Text;
             this.Redraw();

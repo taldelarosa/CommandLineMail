@@ -11,7 +11,9 @@ namespace UI
 
             Canvas Window = new Canvas(Console.WindowWidth,Console.WindowHeight);
 
-            Window.Header.Sections[0].Update("Test Top Left");
+            // Working on Header drawing starting with Anchoring Left
+
+            //Window.Header.Sections[0].Update("Test Top Left");
                 
             Console.ReadKey(false);
         }
