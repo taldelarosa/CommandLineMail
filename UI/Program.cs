@@ -11,7 +11,7 @@ namespace UI
 
             Canvas Window = new Canvas(Console.WindowWidth,Console.WindowHeight);
 
-            Window.Header.Sections[0].Update("TestTopText");
+            Window.Header.Sections[0].Update("Test Top Left");
                 
             Console.ReadKey(false);
         }

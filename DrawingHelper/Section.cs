@@ -21,11 +21,11 @@ namespace DrawingHelper
 
         private void Redraw()
         {
-            int writeLength = (this.Bounds.Item1 - this.Bounds.Item4);
+            int writeLength = (this.Bounds.Item3 - this.Bounds.Item1);
 
             Console.SetCursorPosition(this.Bounds.Item1,this.Bounds.Item2);
 
-            if(this.Text.Length > (this.Bounds.Item1 - this.Bounds.Item4) )
+            if(this.Text.Length > writeLength )
             {
                 string shortendText = this.Text.Substring(0,writeLength-1);
                 Console.Write(shortendText+ "~");
