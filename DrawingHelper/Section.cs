@@ -21,15 +21,19 @@ namespace DrawingHelper
 
         private void Redraw()
         {
+            int writeLength = (this.Bounds.Item1 - this.Bounds.Item4);
+
             Console.SetCursorPosition(this.Bounds.Item1,this.Bounds.Item2);
 
-            if(this.Text.Length > this.Bounds.Item1)
+            if(this.Text.Length > (this.Bounds.Item1 - this.Bounds.Item4) )
             {
-
+                string shortendText = this.Text.Substring(0,writeLength-1);
+                Console.Write(shortendText+ "~");
             }
-
-            //TODO: Dont write out if it would pass the bounds. Or only write out to the bounds
-            Console.Write(this.Text);
+            else
+            {
+                Console.Write(this.Text);
+            }
         }
 
     }

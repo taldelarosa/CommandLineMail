@@ -11,7 +11,7 @@ namespace UI
 
             Canvas Window = new Canvas(Console.WindowWidth,Console.WindowHeight);
 
-            Window.Header.Sections[0].Update("Header Info");
+            Window.Header.Sections[0].Update("Header InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader InfoHeader Info");
             Console.ReadKey(false);
         }
     }
