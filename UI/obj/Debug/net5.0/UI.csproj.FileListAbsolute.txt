@@ -14,3 +14,6 @@ C:\src\CommandLineMail\UI\obj\Debug\net5.0\UI.dll
 C:\src\CommandLineMail\UI\obj\Debug\net5.0\ref\UI.dll
 C:\src\CommandLineMail\UI\obj\Debug\net5.0\UI.pdb
 C:\src\CommandLineMail\UI\obj\Debug\net5.0\UI.genruntimeconfig.cache
+C:\src\CommandLineMail\UI\bin\Debug\net5.0\DrawingHelper.dll
+C:\src\CommandLineMail\UI\bin\Debug\net5.0\DrawingHelper.pdb
+C:\src\CommandLineMail\UI\obj\Debug\net5.0\UI.csproj.CopyComplete

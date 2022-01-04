@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DrawingHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DrawingHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DrawingHelper.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DrawingHelper/1.0.0": {
+      "type": "project",
+      "path": "../DrawingHelper/DrawingHelper.csproj",
+      "msbuildProject": "../DrawingHelper/DrawingHelper.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DrawingHelper >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ragma\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\src\\CommandLineMail\\DrawingHelper\\DrawingHelper.csproj": {
+              "projectPath": "C:\\src\\CommandLineMail\\DrawingHelper\\DrawingHelper.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
